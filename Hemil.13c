@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+void main() {
+    double bytes, kb, mb, gb;
+
+    // Taking input
+    printf("Enter size in bytes: ");
+    scanf("%lf", &bytes);
+
+    // Conversion
+    kb = bytes / 1024;           // 1 KB = 1024 Bytes
+    mb = bytes / (1024 * 1024);  // 1 MB = 1024 KB
+    gb = bytes / (1024 * 1024 * 1024); // 1 GB = 1024 MB
+
+    // Display result
+    printf("\n%.2lf Bytes = %.2lf KB", bytes, kb);
+    printf("\n%.2lf Bytes = %.2lf MB", bytes, mb);
+    printf("\n%.2lf Bytes = %.6lf GB\n", bytes, gb);
+}
+
